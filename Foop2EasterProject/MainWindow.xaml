@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Foop2EasterProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox x:Name="lstbx1" HorizontalAlignment="Left" Height="212" Margin="115,111,0,0" VerticalAlignment="Top" Width="215" SelectionChanged="Lstbx1_SelectionChanged"/>
+        <Label Content="Prices&#xD;&#xA;" HorizontalAlignment="Left" Margin="124,47,0,0" VerticalAlignment="Top" Height="39" Width="119" FontSize="22" Foreground="Red" FontWeight="Bold"/>
+        <Button Content="Add to Cart" HorizontalAlignment="Left" Margin="351,153,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox  HorizontalAlignment="Left" Margin="25,131,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="0">
+            <ComboBoxItem Name="cbi1">Vodka</ComboBoxItem>
+        </ComboBox>
+        <ListBox HorizontalAlignment="Left" Height="212" Margin="456,111,0,0" VerticalAlignment="Top" Width="164"/>
+        <Label Content="Checkout" HorizontalAlignment="Left" Margin="456,47,0,0" VerticalAlignment="Top" FontSize="22" Foreground="Red" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="456,346,0,0" TextWrapping="Wrap" Text="Total Price:" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="601,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <Button Content="Remove from Cart" HorizontalAlignment="Left" Margin="649,153,0,0" VerticalAlignment="Top" Width="108" Height="20"/>
+        <Button Content="Clear Cart" HorizontalAlignment="Left" Margin="664,209,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox HorizontalAlignment="Left" Margin="25,183,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="0">
+            <ComboBoxItem Name="cbi2">Tesco</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="124,346,0,0" TextWrapping="Wrap" Text="Price:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtblkPrice" HorizontalAlignment="Left" Margin="172,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
